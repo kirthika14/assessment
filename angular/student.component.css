@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse;
+    box-shadow: aqua;
+    background-color: darkorange;
+    border: darkslategrey solid 2px;
+    padding: 5px;
+    margin: 0 auto;
+}
+button{
+    padding: 5px;
+    background-color: magenta;
+    text-emphasis: size 5%;
+}

@@ -1,0 +1,21 @@
+
+<button (click)="postValue()">post</button>&nbsp;&nbsp;
+<button (click)="putValue()">put</button>&nbsp;&nbsp;
+<button (click)="deleteValue()">delete</button>&nbsp;&nbsp;
+<button (click)="fetchData()">get</button>
+<table border="1" *ngIf="stud !=''">
+    <tr>
+        <td>name</td>
+        <td>course</td>
+        <td>grade</td>
+        <td>address</td>
+        <td>phno</td>
+    </tr>
+    <tr *ngFor="let s of stud | async">
+        <td>{{s.name}}</td>
+        <td>{{s.course}}</td>
+        <td>{{s.grade}}</td>
+        <td>{{s.address}}</td>
+        <td>{{s.phno}}</td>
+    </tr>
+</table>
